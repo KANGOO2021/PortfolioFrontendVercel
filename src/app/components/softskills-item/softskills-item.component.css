@@ -1,0 +1,32 @@
+.mi_softskills {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 15px;
+}
+.progress {
+    margin: 10px;
+}
+
+div h4 {
+    margin-left: 10px;
+}
+
+
+.images {
+    height: 25px;
+    width: 25px;
+    margin: 5px;
+
+}
+
+ .boton {
+     border: none;
+     background: none;
+     margin-left: 20px;
+ }
+
+ .modal-title {
+     text-align: center;
+ }

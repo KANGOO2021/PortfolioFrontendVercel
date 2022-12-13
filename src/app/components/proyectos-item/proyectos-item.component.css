@@ -1,0 +1,90 @@
+
+.card {
+    height: 220px;
+    border: 1px solid black;
+    margin: 10px;
+   /*  cursor: move; */
+   }
+.images {
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+
+}
+
+.boton {
+    border: none;
+    background: none;
+    margin-left: 20px;
+}
+
+.modal-title {
+    text-align: center;
+}
+
+.separar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 5px;
+
+}
+.separar1 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 5px;
+
+}
+.separar2 {
+    margin-top: 70px;
+    position: absolute;
+
+    
+}
+
+
+.image_github {
+    height: 70px;
+    width: 120px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+    
+.sitio_web {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+    
+.sitio_web:hover {
+    color: #02A5E0;
+}
+        
+.image_web {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+ .image_proyectos {
+     margin: 10px 10px 5px 5px;
+     width: 200px;
+     height: 200px;
+ }
+ 
+ .card-title{
+    font-size: 20px;
+ }
+ 
+.card-text{
+    margin: 5px;
+    text-align: justify;
+    hyphens: auto;
+
+}
+
+
+ 
+

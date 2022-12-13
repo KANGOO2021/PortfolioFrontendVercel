@@ -1,0 +1,21 @@
+
+<div class="mi_softskills">
+    <div class="softskills_title">
+        <h2>{{skill.titulo}}</h2>
+    </div>
+    <div *ngIf="this.login.getUserRole() == 'ADMIN'">
+   
+        <app-softskilledit [skill]="skill" (update)="updateSoftskill()"></app-softskilledit>
+        
+        <a><img class="images" alt="Eliminar" src="./assets/img/boton-cerrar.png" title="Eliminar"
+                (click)="eliminar(skill.id ?? '0')" /></a>
+
+    </div>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"
+        aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+        [style.width]="skill.porcentaje+'%'" z-index=0>{{skill.porcentaje+'%'}}</div>
+
+</div>
+

@@ -1,0 +1,22 @@
+<div class="proyectos">
+    <div class="mi_proyecto">
+        <h2 class="titulo_proyectos" id="proyectos">Proyectos:</h2>
+        <div *ngIf="this.login.getUserRole() == 'ADMIN'">
+           
+            <app-proyectosadd (add)="getData()"></app-proyectosadd>
+            
+        </div>
+        
+    </div>
+    <div class="proyectos2" id="lista_proyectos">
+
+        <div *ngFor="let proyecto of proyectosList">
+       
+        
+        <app-proyectos-item [proyecto]="proyecto" (remove)="eliminar($event)" (edit)="getData()"></app-proyectos-item>
+        
+        
+       
+        </div>
+    </div>
+</div>

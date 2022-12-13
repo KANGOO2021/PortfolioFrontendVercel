@@ -1,0 +1,292 @@
+@media (max-width: 1400px) {
+
+    .cabecera {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .arg-programa {
+        background-color: black;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+
+    .iconos {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .iconos-sociales {
+        margin-top: 20px;
+        /* margin-right:40px; */
+    }
+
+    .iconos-sociales a {
+        margin-right: 5px;
+    }
+
+    .image_yp {
+        height: 50px;
+        width: 100px;
+    }
+
+    .image_inti {
+        height: 50px;
+        width: 220px;
+    }
+
+    .images {
+        height: 35px;
+        width: 35px;
+
+    }
+
+    #image_login {
+        display: block;
+        margin-left: 20px;
+    }
+
+    #image_logout {
+        display: none;
+    }
+
+    .carousel-inner img {
+        height: 75vh;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+    .card.foto_perfil {
+        width: 10rem;
+        margin-left: 80px;
+        border: 0;
+        margin-top: -70px;
+        background-color: transparent;
+    }
+
+    .card-img-top.foto_perfil_img {
+        height: 180px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .list {
+        margin-top: -20px;
+        margin-left: 70px;
+    }
+
+    .perfil {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    #perfil {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;  
+    }
+    
+    .edit_perfil{
+    
+       position: absolute;
+       margin-top: 5px;
+   
+    }
+    
+      
+    
+    
+  /*   .card-title{
+        margin-right: 50px;
+    } */
+
+   .links {
+        margin-right: 20px;
+    } 
+    
+    .links a {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 540px) {
+
+
+    /* HEADER */
+    .cabecera {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .arg-programa {
+        width: 100%;
+        background-color: black;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+
+    .carousel-inner img {
+        height: 40vh;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+    .card.foto_perfil {
+
+        width: 7rem;
+        margin-left: 120px;
+        border: 0;
+        margin-top: -80px;
+        background-color: transparent;
+    }
+
+    .card-img-top.foto_perfil_img {
+        height: 120px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .list {
+        margin-top: -20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+
+    .perfil {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .links a {
+        margin: 3px;
+    }
+
+}
+
+
+@media (min-width: 541px) and (max-width: 1030px) {
+
+    /* HEADER */
+    .cabecera {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .arg-programa {
+        background-color: black;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+
+    .iconos {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .iconos-sociales {
+        margin-top: 20px;
+        /* margin-right:40px; */
+    }
+
+    .iconos-sociales a {
+        margin-right: 5px;
+    }
+
+    .image_yp {
+        height: 50px;
+        width: 100px;
+    }
+
+    .image_inti {
+        height: 50px;
+        width: 220px;
+    }
+
+    .images {
+        height: 35px;
+        width: 35px;
+    }
+
+    #image_login {
+        display: none;
+    }
+
+    #image_logout {
+        display: none;
+    }
+
+    .carousel-inner img {
+        height: 30vh;
+        border-radius: 15px;
+        margin-top: 20px;
+    }
+
+    .card.foto_perfil {
+        width: 8rem;
+        margin-left: 120px;
+        border: 0;
+        margin-top: -80px;
+        background-color: transparent;
+    }
+
+    .card-img-top.foto_perfil_img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 50%;
+    }
+
+    .list {
+        margin-top: -20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .perfil {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .links a {
+        margin: 3px;
+    }
+
+}
+
+

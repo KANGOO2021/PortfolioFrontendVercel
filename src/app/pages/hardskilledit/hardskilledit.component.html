@@ -1,0 +1,53 @@
+<button type="button" class="boton" data-bs-toggle="modal" [attr.href]="'#hskillsmodal'+skill.id"><img class="images"
+        id="image_login" loading="lazy" alt="Editar Hard Skill" src="./assets/img/pencil.png"
+        title="Editar Hard Skill" (click)="getdataId(skill.id)"/></button>
+
+
+<div class="modal fade" [id]="'hskillsmodal'+skill.id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modo Edición</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form [formGroup]="hardskillForm" (ngSubmit)="updateHardskill()" class="formContact">
+                    <div class="mb-3" form-group>
+                        <label>Habilidad</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el titulo" formControlName="titulo" id="titulo" value="titulo">
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>Porcentaje</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el porcentaje (ej: 90)" formControlName="porcentaje" id="porcentaje" value="porcentaje">
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>Seleccione un color</label>
+                      
+                        <select formControlName="color" id="color" class="form-control" class="form-select" value="color">
+                            <option value="bg-default">Azul</option>
+                            <option value="bg-danger">Rojo</option>
+                            <option value="bg-success">Verde</option>
+                            <option value="bg-info">Celeste</option>
+                            <option value="bg-warning">Amarillo</option>
+                            <option value="progress-bar-purple">Violeta</option>
+                            <option value="progress-bar-black">Negro</option>
+                            <option value="progress-bar-orange">Naranja</option>
+
+                        </select>
+
+
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">Actualizar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

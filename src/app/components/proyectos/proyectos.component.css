@@ -1,0 +1,145 @@
+@media (max-width: 1400px) {
+
+
+    .mi_proyecto {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 30px auto;
+    }
+    
+   .proyectos2 {
+        display: flex;
+        flex-wrap: wrap;
+        
+        
+    } 
+    
+ 
+    .image_github {
+        height: 70px;
+        width: 120px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .sitio_web {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    .sitio_web:hover {
+        color: #02A5E0;
+    }
+    
+    .image_web {
+        height: 40px;
+        width: 40px;
+        margin-right: 5px;
+    }
+    
+ /*    .card {
+        height: 220px;
+        border: 1px solid black;
+        margin: auto;
+        cursor: move;
+    } */
+}
+
+
+@media (max-width: 540px) {
+
+    .titulo_proyectos {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    .image_proyectos {
+        margin: 15px 50px 0px;
+        width: 200px;
+    }
+
+    h4.titulo_tarjeta {
+        font-size: 30px;
+    }
+
+    .texto_tarjeta {
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    .sitio_web {
+        margin-left: 10px;
+    }
+
+    .image_github {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .card {
+        height: auto;
+        margin: auto
+    }
+
+}
+
+@media (min-width: 541px) and (max-width: 1030px) {
+
+    .titulo_proyectos {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    .proyectos2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image_proyectos {
+        margin: 10px;
+        width: 200px;
+    }
+
+    h4.titulo_tarjeta {
+        font-size: 30px;
+    }
+
+    .texto_tarjeta {
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    .sitio_web {
+        margin-left: 10px;
+    }
+    
+    .card {
+        height: auto;
+        margin: auto
+
+    }
+
+}

@@ -1,0 +1,112 @@
+<div class="container-fluid" >
+    <div class="cabecera">
+        <div class="arg-programa">
+            <a href="https://argentinaprograma.inti.gob.ar/" target="_blank"><img class="image_yp" loading="lazy"
+                    alt="Yo Programo" src="./assets/img/logo2.png" title="Argentina Programa" /></a>
+            <a href="https://argentinaprograma.inti.gob.ar/" target="_blank"><img class="image_inti" loading="lazy"
+                    alt="Yo Programo" src="./assets/img/logo3.png" title="Argentina Programa" /></a>
+        </div>
+        <div class="iconos">
+            <div class="iconos-sociales">
+                <a href="http://www.linkedin.com/in/sergio-mu%C3%B1oz-80238a246" target="_blank"><img class="images"
+                        loading="lazy" alt=" Sígueme en linkedIn" src="./assets/img/iconos/linkedIn.icono.png"
+                        title="Sígueme en linkedIn" /></a>
+
+                <a href="https://wa.me/5491140679793" target="_blank"><img class="images" loading="lazy"
+                        alt="Sígueme en WhatsApp" src="./assets/img/iconos/whatsapp-icono.png"
+                        title="Sígueme en WhatsApp" /></a>
+
+                <a href="https://www.facebook.com/profile.php?id=100007425427174" target="_blank"><img class="images"
+                        loading="lazy" alt="Sígueme en Facebook" src="./assets/img/iconos/facebook-icono.png"
+                        title="Sígueme en Facebook" /></a>
+
+                <a href="https://www.youtube.com/channel/UCSVftDR2-eUEtH-dzah05EA" target="_blank"><img class="images"
+                        loading="lazy" alt="Sígueme en YouTube" src="./assets/img/iconos/Youtube-icono.png"
+                        title=" Sígueme en YouTube" /></a>
+
+                <a href="https://www.instagram.com/sergio_munoz_2022/" target="_blank"><img class="images"
+                        loading="lazy" alt="Sígueme en Instagram" src="./assets/img/iconos/Instagram-icono.png"
+                        title="Sígueme en Instagram" /></a>
+            </div>
+            <div class="btn-inicio" id="btn-inicio">
+                
+                <!-- <app-inicio></app-inicio> -->
+                
+                <div *ngIf="!isLoggedIn">
+                <app-login (add)="getData()"></app-login>
+                </div>
+                <a *ngIf="isLoggedIn" (click)="logout()" style="margin-left: 30px;" >
+                    <img class="images" loading="lazy" alt="Cerrar Sesión" src="./assets/img/flecha.png" title="Cerrar Sesión" />
+                </a>
+            
+            </div>
+        </div>
+    </div>
+    
+
+<div *ngFor="let perfil of perfilList">
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img [src]="perfil.bgimg1" class="imgd-block w-100" alt="...">
+            </div>
+           
+            <div class="carousel-item">
+                <img [src]="perfil.bgimg2" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img [src]="perfil.bgimg3" class="d-block w-100" alt="...">
+            </div>
+            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        </button>
+        
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        </button>
+     
+        <div class="edit_perfil" *ngIf="this.login.getUserRole() == 'ADMIN'">
+        <app-perfil-edit [perfil]="perfil" (update)="updatePerfil()"></app-perfil-edit>
+        </div>
+    </div>
+    
+
+    <div class="card foto_perfil" >
+
+        <img [src]="perfil.imagen" class="card-img-top foto_perfil_img" alt="">
+      
+    
+        <div class="card-body" id="perfil">
+            <h2 class="card-title">{{perfil.nombre}}</h2>
+            <!-- <app-perfil-edit [perfil]="perfil" (update)="updatePerfil()"></app-perfil-edit> -->
+        </div>
+      
+  
+    </div>
+    
+    <div class="perfil">
+    
+        <ul class="list">
+            <li>{{perfil.puesto}}</li>
+            <li>{{perfil.ubicacion}}</li>
+            <li>{{perfil.email}}</li>
+            
+        </ul>
+        
+
+        <div class="links">
+        
+            <a [routerLink]="['acercade']" class="btn btn-primary">Acerca de</a>
+            <a [routerLink]="['experiencia']" class="btn btn-primary">Experiencia</a>
+            <a [routerLink]="['educacion']" class="btn btn-primary">Educación</a>
+            <a [routerLink]="['hard_skills']" class="btn btn-primary">Hard Skills</a>
+            <a [routerLink]="['soft_skills']" class="btn btn-primary">Soft Skills</a>
+            <a [routerLink]="['proyectos']" class="btn btn-primary">Proyectos</a>
+        </div>
+    </div>
+  </div>
+
+</div>

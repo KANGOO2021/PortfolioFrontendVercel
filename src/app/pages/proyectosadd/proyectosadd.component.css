@@ -1,0 +1,15 @@
+ .images {
+     height: 40px;
+     width: 40px;
+
+ }
+
+ .boton {
+     border: none;
+     background: none;
+     margin-left: 20px;
+ }
+
+ .modal-title {
+     text-align: center;
+ }

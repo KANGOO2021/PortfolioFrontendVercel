@@ -1,0 +1,14 @@
+<div class="acerca" *ngFor = "let acerca of acercade">
+    <div class="mi_acercade"> 
+        <h2 class="titulo_acerca" id="acerca">Acerca de:</h2>
+        
+            <app-acercade-edit [acerca]="acerca" (update)="updateAcercade()" *ngIf="this.login.getUserRole() == 'ADMIN'"></app-acercade-edit>
+            
+    </div>
+    
+    <p  class="p_acerca">{{acerca.info}}</p>
+  
+</div>
+
+
+

@@ -1,0 +1,57 @@
+.card {
+    border: 1px solid black;
+    margin: 10px;
+    height: 320px;
+    /* cursor: move; */
+}
+.card-body {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.card.seleccion {
+    transform: scale(1.02) rotate(-1deg);
+    box-shadow: 0px 0px 20px rgba(149, 153, 159, 0.6);
+}
+
+.card p.card-text {
+    margin-top: 0px;
+}
+
+.card-img-top.card_educacion {
+    height: 120px;
+    border-bottom: 1px solid black;
+}
+
+div.educacion p {
+    margin: 20px 10px;
+    text-align: justify;
+}
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+.educacion_titulos {
+    width: 780px;
+    height: 500px;
+}
+
+.images {
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+
+}
+
+.separar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  
+  
+
+}

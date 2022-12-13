@@ -1,0 +1,37 @@
+
+<div class="card" style="width: 18rem;">
+    <img [src]="educa.imagen" class="card-img-top card_educacion" alt="...">
+    <div class="card-body">
+    <div>
+        <h5 class="card-title">{{educa.titulo}}</h5>
+        <p class="card-text">{{educa.descripcion}}</p>
+    </div>
+        <div class="separar">
+            <button type="button" class="btn btn-primary"  data-bs-toggle="modal" [attr.href]="'#modal1'+educa.id" role="button">Certificado</button>
+            
+                <div *ngIf="this.login.getUserRole() == 'ADMIN'">
+                <app-educacionedit [educa]="educa" (update)="updateEducacion()"></app-educacionedit>
+              
+                    
+                <a><img class="images" alt="Eliminar" src="./assets/img/boton-cerrar.png" title="Eliminar" (click)="eliminar(educa.id)"/></a>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" [id]="'modal1'+educa.id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img [src]="educa.certificado" class="educacion_titulos" >
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,62 @@
+@media (max-width: 1400px) {
+    .experiencia {
+        width: 95%;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 30px auto;
+    }
+    
+    
+    .experiencia_bg {
+      
+       width: 100%;
+       height: 700px;
+    }
+    
+    
+    div.experiencia p {
+        margin: 20px 10px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 540px) {
+
+    /* EXPERIENCIA */
+
+    .titulo_experiencia {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        text-decoration: underline;
+    }
+
+
+    .experiencia_bg {
+       /*  background-image: url(../../../assets/img/sitio-en-construccion.jpg); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 300px;
+    }
+  
+}
+
+@media (min-width: 541px) and (max-width: 1030px) {
+
+    .titulo_experiencia {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        text-decoration: underline;
+    }
+
+    .experiencia_bg {
+        background-image: url(../../../assets/img/sitio-en-construccion.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+    }
+
+}

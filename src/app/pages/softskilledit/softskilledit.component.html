@@ -1,0 +1,39 @@
+<button type="button" class="boton" data-bs-toggle="modal" [attr.href]="'#sskillsmodal'+skill.id"><img class="images"
+        id="image_login" loading="lazy" alt="Editar Soft Skill" src="./assets/img/pencil.png" title="Editar Soft Skill" (click)="getdataId(skill.id)"></button>
+
+
+<div class="modal fade" [id]="'sskillsmodal'+skill.id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modo Edición</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form [formGroup]="softskillForm" (ngSubmit)="updateSoftskill()" class="formContact">
+                    <div class="mb-3" form-group>
+                        <label>Habilidad</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el titulo"
+                            formControlName="titulo">
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>Porcentaje</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el porcentaje (ej: 90%)"
+                            formControlName="porcentaje">
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">Actualizar</button>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

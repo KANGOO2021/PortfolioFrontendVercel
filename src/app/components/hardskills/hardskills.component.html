@@ -1,0 +1,19 @@
+<div class="hard_skills">
+    <div class="mi_hardskills">
+        <h1 class="titulo_hard_skills" id="hard_skills">Hard Skills:</h1>
+        <div *ngIf="this.login.getUserRole() == 'ADMIN'">
+        
+        <app-hardskilladd (add)="getData()"></app-hardskilladd>
+        
+        </div>
+        
+    </div>
+    <div class="skills" *ngFor="let skill of hardskillsList">
+    
+          <app-hardskills-item [skill]="skill" (remove)="eliminar($event)" (edit)="getData()"></app-hardskills-item>   
+            
+        </div>
+    </div>
+
+
+    

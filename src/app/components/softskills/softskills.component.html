@@ -1,0 +1,17 @@
+<div class="soft_skills">
+    <div class="mi_softskills">
+        <h1 class="titulo_soft_skills" id="soft_skills">Soft Skills:</h1>
+        
+        <div *ngIf="this.login.getUserRole() == 'ADMIN'">
+      
+            <app-softskilladd (add)="getData()"></app-softskilladd>
+          
+        </div>
+    </div>
+    <div class="skills2" *ngFor="let skill of softskillsList">
+  
+        <app-softskills-item [skill] = "skill" (remove)="eliminar($event)" (edit)="getData()"></app-softskills-item>
+        
+    </div>
+</div>
+

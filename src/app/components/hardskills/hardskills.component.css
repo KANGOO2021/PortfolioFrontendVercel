@@ -1,0 +1,87 @@
+@media (max-width: 1400px) {
+
+    .mi_hardskills {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .hard_skills {
+        width: 95%;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 30px auto;
+    }
+
+    .progress {
+        margin: 10px;
+    }
+
+    .progress-bar-purple {
+        background-color: rgb(134, 3, 205) !important;
+    }
+
+    .progress-bar-black {
+        background-color: rgb(82, 80, 82) !important;
+    }
+
+    .progress-bar-orange {
+        background-color: rgb(224, 123, 21) !important;
+    }
+
+    div.hard_skills h4 {
+        margin-left: 10px;
+    }
+
+    span {
+        font-size: 20px;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+
+    .skills {
+        border: 1px solid black;
+        border-radius: 15px;
+        margin: 20px;
+        cursor: pointer;
+        background-color: rgb(222, 226, 226);
+        width: auto;
+    }
+
+    .edicion_skills {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    #btn_eliminar {
+        display: none;
+    }
+}
+
+
+@media (max-width: 540px) {
+
+    .titulo_hard_skills {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+}
+
+
+@media (min-width: 541px) and (max-width: 1030px) {
+
+    .titulo_hard_skills {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+}

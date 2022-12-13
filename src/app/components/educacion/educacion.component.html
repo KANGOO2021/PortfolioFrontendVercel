@@ -1,0 +1,22 @@
+<div class="educacion">
+    <div class="mi_educacion">
+        <h2 class="titulo_educacion" id="educacion">Educación:</h2>
+        <div *ngIf="this.login.getUserRole() == 'ADMIN'">
+            <!-- componente padre recibe la accion del hijo(softskilladd) y actualiza -->
+            <app-educacion-add (add)="getData()"></app-educacion-add>
+        
+        </div>
+    </div>
+
+        <div class="educacion2" id="lista">
+            <div *ngFor="let educa of educacionList">
+           
+                <!-- input:recibe los parametros del softskillitem //output:recibe el evento -->
+                <app-educacion-item [educa]="educa" (remove)="eliminar($event)" (edit)="getData()"></app-educacion-item>
+
+       
+        </div>
+    </div>
+</div>
+
+

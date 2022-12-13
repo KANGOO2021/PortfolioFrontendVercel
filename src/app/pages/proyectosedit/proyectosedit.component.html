@@ -1,0 +1,53 @@
+<button type="button" class="boton" data-bs-toggle="modal" [attr.href]="'#proyectomodal'+proyecto.id"><img class="images" id="image_login" loading="lazy" alt="Editar Educación" src="./assets/img/pencil.png" title="Editar Educación" (click)="getdataId(proyecto.id)"/></button>
+
+
+<div class="modal fade" [id]="'proyectomodal'+proyecto.id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modo Edición</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form [formGroup]="editproyectoForm" (ngSubmit)="updateProyecto()" class="formContact">
+
+                    <div class="mb-3" form-group>
+                        <label>Imagen</label>
+                        <input type="file" class="form-control" (change)="uploadImage($event)">
+
+                        <input type="text" class="form-control" formControlName="imagen" id="imagen"
+                            placeholder="Ingrese el vínculo de la imagen" [(ngModel)]="this.link" value="imagen">
+
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>Título</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el titulo" formControlName="titulo"
+                            id="titulo" value="titulo">
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>Descripción</label>
+                        <textarea type="text" class="form-control" placeholder="Ingrese la descripción" formControlName="descripcion" id="descripcion" value="descripcion"></textarea>
+                        
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>Sitio Web</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el vínculo del sitio web" formControlName="web" id="web" value="web">
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>GitHub</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el vínculo del sitio web" formControlName="github" id="github" value="github">
+                    </div>
+
+                    <div class="modal-footer" form-group>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">Actualizar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

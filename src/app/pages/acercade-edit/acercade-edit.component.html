@@ -1,0 +1,34 @@
+<button type="button" class="boton" data-bs-toggle="modal" [attr.href]="'#acercamodal'+acerca.id"><img class="images" id="image_login" loading="lazy" alt="Editar Acerca de" src="./assets/img/pencil.png" title="Editar Acerca de" (click)="getdataId(acerca.id)" /></button>
+
+
+<div class="modal fade" [id]="'acercamodal'+acerca.id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modo Edición</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="acercadeForm" (ngSubmit)="updateAcercade()" class="formContact">
+
+                    <div class="mb-3">
+                        <label>Descripción</label>
+                        <textarea type="text" class="form-control" placeholder="Ingrese la descripción"
+                            formControlName="info" id="acercade_info"></textarea>
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">Actualizar</button>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

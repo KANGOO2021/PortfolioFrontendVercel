@@ -1,0 +1,22 @@
+ .images {
+     height: 35px;
+     width: 35px;
+
+ }
+
+ .boton {
+     border: none;
+     background: none;
+     margin-left: 20px;
+ }
+
+ .modal-title {
+     text-align: center;
+ }
+ 
+ #acercade_info {
+     height: 250px;
+     text-align: justify;
+     margin: auto;
+
+ }

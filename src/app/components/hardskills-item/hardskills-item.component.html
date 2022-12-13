@@ -1,0 +1,24 @@
+
+<div class="mi_hardskills">
+    <div>
+        <h2>{{skill.titulo}}</h2>
+    </div>
+    <div *ngIf="this.login.getUserRole() == 'ADMIN'">
+    
+   
+    <app-hardskilledit [skill]="skill" (update)="updateHardskill()"></app-hardskilledit>
+    
+    
+    <a><img class="images" alt="Eliminar" src="./assets/img/boton-cerrar.png" title="Eliminar"
+            (click)="eliminar(skill.id ?? '0')" /></a>
+    
+    </div>
+</div>
+
+
+<div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated {{skill.color}}" role="progressbar"
+        aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+        [style.width]="skill.porcentaje+'%'" z-index=0>{{skill.porcentaje+'%'}}</div>
+        
+</div>

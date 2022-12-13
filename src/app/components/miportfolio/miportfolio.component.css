@@ -1,0 +1,27 @@
+.portfolio{
+  display: flex;
+  justify-content: center;
+  
+  width: 95%;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 30px auto;
+
+}
+
+
+.img-portfolio{
+  width: 70%;  
+  height: 300px;
+  margin: 10px;   
+ 
+  
+            
+            
+           
+              
+    
+    
+
+}

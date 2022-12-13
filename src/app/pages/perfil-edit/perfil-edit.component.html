@@ -1,0 +1,77 @@
+<button type="button" class="boton" data-bs-toggle="modal" [attr.href]="'#modal'+perfil.id"><img class="images"id="image_login" loading="lazy" alt="Editar Educación" src="./assets/img/pencil.png" title="Editar Educación" (click)="getdataId(perfil.id)" /></button>
+
+
+<div class="modal fade" [id]="'modal'+perfil.id" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modo Edición</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form [formGroup]="editperfilForm" (ngSubmit)="updatePerfil()" class="formContact">
+
+                    <div class="mb-3" form-group>
+                        <label>Imagen de Perfil</label>
+                        <input type="file" class="form-control" (change)="uploadImage($event)">
+
+                        <input type="text" class="form-control" formControlName="imagen" id="imagen" placeholder="Ingrese el vínculo de la imagen" [(ngModel)]="this.link" value="imagen">
+
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>Nombre y Apellido</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el nombre completo" formControlName="nombre" id="nombre" value="nombre">
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>Puesto</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el puesto laboral" formControlName="puesto" id="puesto" value="puesto">
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>Ubicación</label>
+                        <input type="text" class="form-control" placeholder="Ingrese la ciudad de origen" formControlName="ubicacion" id="ubicacion" value="ubicacion">
+                    </div>
+
+                    <div class="mb-3" form-group>
+                        <label>Email</label>
+                        <input type="text" class="form-control" placeholder="Ingrese el correo electrónico" formControlName="email" id="email" value="email">
+                    </div>
+                    
+                    <div class="mb-3" form-group>
+                        <label>Imagen 1 de Carrousel</label>
+                        <input type="file" class="form-control" (change)="uploadBgimg1($event)">
+                    
+                        <input type="text" class="form-control" formControlName="bgimg1" id="bgimg1"
+                            placeholder="Ingrese el vínculo de la imagen 1" [(ngModel)]="this.bgimg1" value="bgimg1">
+                    
+                    </div>
+                    
+                    <div class="mb-3" form-group>
+                        <label>Imagen 2 de Carrousel</label>
+                        <input type="file" class="form-control" (change)="uploadBgimg2($event)">
+                    
+                        <input type="text" class="form-control" formControlName="bgimg2" id="bgimg2"
+                            placeholder="Ingrese el vínculo de la imagen 2" [(ngModel)]="this.bgimg2" value="bgimg2">
+                    
+                    </div>
+                    
+                    <div class="mb-3" form-group>
+                        <label>Imagen 3 de Carrousel</label>
+                        <input type="file" class="form-control" (change)="uploadBgimg3($event)">
+                    
+                        <input type="text" class="form-control" formControlName="bgimg3" id="bgimg3"
+                            placeholder="Ingrese el vínculo de la imagen 3" [(ngModel)]="this.bgimg3" value="bgimg3">
+                    
+                    </div>
+
+                    <div class="modal-footer" form-group>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">Actualizar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>

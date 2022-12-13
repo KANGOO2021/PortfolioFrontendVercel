@@ -1,0 +1,56 @@
+@media (max-width: 1400px) {
+
+    .mi_softskills {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .soft_skills {
+        width: 95%;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 30px auto;
+    }
+
+    .skills2 {
+        border: 1px solid black;
+        border-radius: 15px;
+        margin: 20px;
+        cursor: pointer;
+        background-color: rgb(245, 240, 235);
+        width: auto;
+      
+    }
+    
+
+    
+}
+
+
+@media (max-width: 540px) {
+
+    .titulo_soft_skills {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+    
+    
+    
+}
+
+
+@media (min-width: 541px) and (max-width: 1030px) {
+
+    .titulo_soft_skills {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+}
