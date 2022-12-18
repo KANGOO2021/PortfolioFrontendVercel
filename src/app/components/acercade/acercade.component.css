@@ -47,7 +47,8 @@
     .p_acerca {
         font-size: 18px;
         text-align: justify;
-        hyphens: auto;
+        text-justify: inter-word;
+        
     }
 
 }
