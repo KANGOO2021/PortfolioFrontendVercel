@@ -66,8 +66,9 @@ public loginStatusSubjec = new Subject<boolean>();
     }
   }
 
-  public getUserRole(){
+public getUserRole(){
     let user = this.getUser();
-    return user.authorities[0].authority;
-  }
+    return user.authorities[0].authority
+   
+ }
 }

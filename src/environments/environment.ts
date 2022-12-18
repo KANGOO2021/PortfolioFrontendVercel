@@ -13,7 +13,7 @@ export const environment = {
 
 export const environment1 = {
   production: false,
-  urlServer: 'https://portfoliobackend-ser2016munoz.koyeb.app/'
+  urlServer: 'http://localhost:8080/'
 };
 
 

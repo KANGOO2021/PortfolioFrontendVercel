@@ -60,6 +60,14 @@
     #btn_eliminar {
         display: none;
     }
+    
+    .titulo_hard_skills {
+        font-size: 25px;
+        font-weight: bold;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
 }
 
 
@@ -75,7 +83,7 @@
 }
 
 
-@media (min-width: 541px) and (max-width: 1030px) {
+@media (min-width: 541px) and (max-width: 1180px) {
 
     .titulo_hard_skills {
         font-size: 30px;

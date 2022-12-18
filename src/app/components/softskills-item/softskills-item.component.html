@@ -1,8 +1,6 @@
 
 <div class="mi_softskills">
-    <div class="softskills_title">
-        <h2>{{skill.titulo}}</h2>
-    </div>
+    
     <div *ngIf="this.login.getUserRole() == 'ADMIN'">
    
         <app-softskilledit [skill]="skill" (update)="updateSoftskill()"></app-softskilledit>
@@ -11,6 +9,9 @@
                 (click)="eliminar(skill.id ?? '0')" /></a>
 
     </div>
+</div>
+<div>
+    <h3 class="softskills_title">{{skill.titulo}}</h3>
 </div>
 <div class="progress">
     <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar"

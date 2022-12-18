@@ -1,15 +1,12 @@
-<div class="card mb-3" style="width:600px;">
+<div class="card mb-3">
 <div class="row g-0">
-    <div class="col-md-4">
+    <div class="col-md-4 target">
         <img [src]="proyecto.imagen" class="img-fluid rounded-start image_proyectos" alt="...">
     </div>
     <div class="col-md-8">
         <div class="card-body">
         
             <div class="separar">
-                <h4 class="card-title" ><u>{{proyecto.titulo}}</u></h4>
-                
-              
                 <div *ngIf="this.login.getUserRole() == 'ADMIN'">
                 <app-proyectosedit [proyecto]="proyecto" (update)="updateProyecto()"></app-proyectosedit>
                 
@@ -17,7 +14,10 @@
                 (click)="eliminar(proyecto.id ?? '0')" /></a>
                 </div>
             </div>
+            
+            
          <div class="separar1">   
+            <h3 class="card-title"><u>{{proyecto.titulo}}</u></h3>
             <div>
             <p class="card-text texto_tarjeta">{{proyecto.descripcion}}</p> 
             </div>

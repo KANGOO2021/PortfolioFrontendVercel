@@ -1,16 +1,21 @@
+
+@media (max-width: 1400px) {
+
 .mi_softskills {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: row;
-    align-items: flex-end;
-    margin-left: 15px;
+   
+    
 }
 .progress {
-    margin: 10px;
+    margin: 20px;
 }
 
-div h4 {
+.softskills_title {
     margin-left: 10px;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 
@@ -30,3 +35,15 @@ div h4 {
  .modal-title {
      text-align: center;
  }
+ 
+} 
+
+@media (max-width: 540px) {
+
+.softskills_title {
+    margin-left: 10px;
+ 
+    font-size: 15px;
+    }
+}
+

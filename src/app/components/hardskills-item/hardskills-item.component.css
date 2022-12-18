@@ -1,15 +1,18 @@
 .mi_hardskills {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: row;
-    align-items: flex-end;
-    margin-left: 10px;
 }
 
 .progress {
-    margin: 10px;
+    margin: 20px;
 }
 
+.hardskills_title {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 25px;
+}
 
 .progress-bar-purple {
     background-color: rgb(134, 3, 205) !important;
@@ -27,8 +30,6 @@ div h4 {
     margin-left: 10px;
 }
 
-
-
 .images {
     height: 25px;
     width: 25px;
@@ -36,12 +37,13 @@ div h4 {
 
 }
 
- .boton {
+.boton {
      border: none;
      background: none;
      margin-left: 20px;
- }
+}
 
  .modal-title {
      text-align: center;
- }
+}
+

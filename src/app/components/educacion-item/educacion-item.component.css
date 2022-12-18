@@ -1,6 +1,7 @@
+
 .card {
     border: 1px solid black;
-    margin: 10px;
+    margin: 12px;
     height: 320px;
     /* cursor: move; */
 }
@@ -9,6 +10,11 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
 
 }
 
@@ -41,8 +47,8 @@ div.educacion p {
 }
 
 .images {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     margin-left: 10px;
 
 }
@@ -52,6 +58,7 @@ div.educacion p {
     justify-content: space-between;
     flex-direction: row;
   
-  
 
 }
+
+

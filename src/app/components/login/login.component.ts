@@ -55,21 +55,23 @@ formSubmit(){
 
     this.loginService.generateToken(this.loginData).subscribe(
       (data:any) => {
-        console.log(data);
+        //console.log(data);
         this.loginService.loginUser(data.token);
         this.loginService.getCurrentUser().subscribe((user:any) => {
           this.loginService.setUser(user);
-          console.log(user);
+          //console.log(user);
 
           if(this.loginService.getUserRole() == 'ADMIN'){
             window.location.href = '/acercade';
             this.loginService.loginStatusSubjec.next(true);
             this.add.emit();
+            
           }
           else if(this.loginService.getUserRole() == 'NORMAL'){ 
             window.location.href = '/acercade';
             this.loginService.loginStatusSubjec.next(true);
             this.add.emit();
+            
           }
           else{
             this.loginService.logout();

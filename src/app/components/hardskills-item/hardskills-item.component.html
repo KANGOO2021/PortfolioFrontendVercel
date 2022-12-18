@@ -1,8 +1,6 @@
 
 <div class="mi_hardskills">
-    <div>
-        <h2>{{skill.titulo}}</h2>
-    </div>
+    
     <div *ngIf="this.login.getUserRole() == 'ADMIN'">
     
    
@@ -13,6 +11,9 @@
             (click)="eliminar(skill.id ?? '0')" /></a>
     
     </div>
+</div>
+<div>
+    <h3 class="hardskills_title">{{skill.titulo}}</h3>
 </div>
 
 
