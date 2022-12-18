@@ -84,6 +84,7 @@
         flex-direction: row;
         align-items: center;
     }
+    
     #perfil {
         display: flex;
         justify-content: space-between;
@@ -103,6 +104,15 @@
     
     .links a {
         margin-right: 5px;
+    }
+    
+    .card-title {
+    
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 80px;
+    
     }
 }
 
@@ -142,10 +152,11 @@
     .card.foto_perfil {
 
         width: 7rem;
-        margin-left: 120px;
+        margin-left: 70px;
         border: 0;
         margin-top: -80px;
         background-color: transparent;
+       
     }
 
     .card-img-top.foto_perfil_img {
@@ -181,6 +192,15 @@
 
     .links a {
         margin: 3px;
+    }
+    
+    .card-title{
+       
+        font-size:25px;
+        margin-top: 20px;
+        margin-bottom:40px;
+        margin-left: 70px;
+      
     }
 
 }
